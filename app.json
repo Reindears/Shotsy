@@ -1,0 +1,43 @@
+{
+    "name": "Screenshot-Bot",
+    "description": "A Bot that can generate screenshot for videos",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmoz2szHXtszQb-KNTdzEeX5MmVdIknBQCQ&usqp=CAU",
+    "keywords": [
+        "Cloud",
+        "Gofile",
+        "Telegram Bot",
+        "Pixeldrain"
+    ],
+    "website": "https://github.com/Reindears",
+    "repository": "https://github.com/Reindears/Shotsy",
+    "success_url": "https://telegram.dog/SyBots",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFatherXD",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
