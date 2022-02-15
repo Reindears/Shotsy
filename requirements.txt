@@ -1,0 +1,3 @@
+hachoir
+pyrogram
+tgcrypto
